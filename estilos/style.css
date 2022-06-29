@@ -44,3 +44,7 @@ iframe#tela {
     height: 413px;
     border-radius: 8px;
 }
+
+section#redes-socias img {
+    width: 50px;
+}
