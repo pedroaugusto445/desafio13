@@ -5,6 +5,11 @@
     to {width: 65px; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.52);}
 }
 
+@keyframes ao-clicar {
+        to {
+             width: 60px;
+        }
+}
 
 * {
     margin: 0px;
@@ -64,6 +69,14 @@ section#redes-sociais img {
 
 section#redes-sociais img:hover {
     animation-name: botoa;
-    animation-duration: .6s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+section#redes-sociais img:active {
+    animation-name: ao-clicar;
+    animation-duration: 2s;
+
 }
 
