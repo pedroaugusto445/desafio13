@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@keyframes botoa {
+    form {width: 60px;}
+    to {width: 65px; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.52);}
+}
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -17,7 +23,7 @@ main {
 }
 
 body {
-    background: url('../pacote-d013/imagens/fundo-madeira.jpg') top center
+    background: url('../imagens/fundo-madeira.jpg') top center
      no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -29,7 +35,7 @@ section#telefone {
     left: 50%;
     transform: translate(-50%, -50% );
 
-    background-image: url ('imagens/frame-iphone.png');
+    background-image: url('../imagens/frame-iphone.png');
     background-repeat: no-repeat;
     background-size: contain;
     height: 550px;
@@ -45,6 +51,19 @@ iframe#tela {
     border-radius: 8px;
 }
 
-section#redes-sociais img {
-    width: 50px;
+section#redes-sociais {
+    text-align: right;
 }
+
+section#redes-sociais img {
+    width: 60px;
+    margin: 5px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.52);
+}
+
+section#redes-sociais img:hover {
+    animation-name: botoa;
+    animation-duration: .6s;
+}
+
